@@ -1,0 +1,7 @@
+«--Separates phone into sections
+«put char 1 to 3 of phone into phone_1
+«put char 4 to 6 of phone into phone_2
+«put char 7 to 10 of phone into phone_3
+
+«--(XXX) - XXX-XXXX Checks to see if phone# is already formated. If not, use format.
+«[ length(phone) >= 11»«phone»«|»(«phone_1») «phone_2»-«phone_3»«]»

@@ -1,0 +1,7 @@
+«fields maildate
+«-- MMMM dd, YYYY Date formater
+«put char 1 to 2 of maildate into maildateMonth
+«put char 4 to 5 of maildate into maildateDay
+«put char 7 to 10 of maildate into maildateYear
+«[ “/” is in maildate»«[ maildateMonth = 01»«put “January” into maildateMonth»«|[ maildateMonth = 02»«put “February” into maildateMonth»«|[ maildateMonth = 03»«put “March” into maildateMonth»«|[ maildateMonth = 04»«put “April” into maildateMonth»«|[ maildateMonth = 05»«put “May” into maildateMonth»«|[ maildateMonth = 06»«put “June” into maildateMonth»«|[ maildateMonth = 07»«put “July” into maildateMonth»«|[ maildateMonth = 08»«put “August” into maildateMonth»«|[ maildateMonth = 09»«put “September” into maildateMonth»«|[ maildateMonth = 10»«put “October” into maildateMonth»«|[ maildateMonth = 11»«put “November” into maildateMonth»«|[ maildateMonth = 12»«put “December” into maildateMonth»«]»«]
+«[ “/” is in maildate»«maildateMonth» «maildateDay», «maildateYear»«|»«maildate»«]»
